@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Фон метки (белый или очень светлый, чтобы было видно цветной текст) -->
+    <solid android:color="#1A000000" /> <!-- Полупрозрачный серый "налет" для объема -->
+
+    <!-- Скругление углов -->
+    <corners android:radius="8dp" />
+
+    <!-- Внутренние отступы -->
+    <padding
+        android:left="8dp"
+        android:top="2dp"
+        android:right="8dp"
+        android:bottom="2dp" />
+</shape>

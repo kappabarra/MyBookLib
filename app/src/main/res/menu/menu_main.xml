@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuSort"
+        android:title="@string/menu_sort"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/menuSortTitle"
+                android:title="@string/menu_sort_title" />
+            <item
+                android:id="@+id/menuSortDate"
+                android:title="@string/menu_sort_date" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menuFilter"
+        android:title="@string/menu_filter"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/menuFilterPlanned"
+                android:title="@string/menu_filter_planned" />
+            <item
+                android:id="@+id/menuFilterReading"
+                android:title="@string/menu_filter_reading" />
+            <item
+                android:id="@+id/menuFilterRead"
+                android:title="@string/menu_filter_read" />
+
+            <item
+                android:id="@+id/menuFilterAuthor"
+                android:title="@string/menu_filter_author" />
+
+            <item
+                android:id="@+id/menuFilterGenre"
+                android:title="@string/menu_filter_genre" />
+
+            <item
+                android:id="@+id/menuClearFilter"
+                android:title="@string/menu_clear_filter" />
+        </menu>
+    </item>
+
+</menu>

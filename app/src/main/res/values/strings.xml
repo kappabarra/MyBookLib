@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MyBookLib</string>
+    <string name="action_settings">Настройки</string>
+    <string name="hint_search_books">Поиск книг...</string>
+    <string name="no_books_found">Книги не найдены</string>
+    <string name="delete_book_confirmation">Вы уверены, что хотите удалить эту книгу?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+
+    <string name="menu_sort">Сортировка</string>
+    <string name="menu_sort_title">По названию</string>
+    <string name="menu_sort_date">По дате добавления</string>
+
+    <string name="menu_filter">Фильтр</string>
+    <string name="menu_filter_planned">В планах</string>
+    <string name="menu_filter_reading">Читаю</string>
+    <string name="menu_filter_read">Прочитано</string>
+
+    <string name="menu_filter_author">Фильтр по автору…</string>
+    <string name="menu_filter_genre">Фильтр по жанру…</string>
+    <string name="menu_clear_filter">Сбросить фильтр</string>
+
+    <string name="dialog_filter_author_title">Фильтр по автору</string>
+    <string name="dialog_filter_genre_title">Фильтр по жанру</string>
+    <string name="dialog_filter_hint_author">Введите автора (часть имени)</string>
+    <string name="dialog_filter_hint_genre">Введите жанр (часть названия)</string>
+    <string name="dialog_apply">Применить</string>
+    <string name="dialog_cancel">Отмена</string>
+</resources>

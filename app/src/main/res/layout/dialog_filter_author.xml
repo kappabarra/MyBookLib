@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/paper_lightblue">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Фильтр по автору"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/ink_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Введите имя автора для фильтрации"
+        android:textSize="14sp"
+        android:textColor="@color/ink_dark" />
+
+    <EditText
+        android:id="@+id/editAuthorFilter"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:hint="Имя автора"
+        android:maxLength="50"
+        android:inputType="textPersonName"
+        android:textColor="@color/ink_medium"
+        android:textSize="16sp"
+        android:background="@drawable/bg_goal_edittext"
+        android:gravity="center"
+        android:maxLines="1" />
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="book_genres_en">
+        <item>fantasy</item>
+        <item>sf</item>
+        <item>detective</item>
+        <item>adventure</item>
+        <item>horror</item>
+        <item>nonfiction</item>
+        <item>business</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="book_genres_ru">
+        <item>Фантастика</item>
+        <item>Боевик</item>
+        <item>Детектив</item>
+        <item>Приключения</item>
+        <item>Ужасы</item>
+        <item>Научпоп</item>
+        <item>Бизнес</item>
+        <item>Другое</item>
+    </string-array>
+</resources>

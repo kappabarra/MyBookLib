@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Основной фон: светло-голубой для релакса глаз -->
+    <color name="paper_lightblue">#F0F8FF</color>
+    <!-- Карточки: белый с легким оттенком -->
+    <color name="paper_white">#FAFAFA</color>
+    <!-- Текст основной: темно-серый -->
+    <color name="ink_dark">#2C3E50</color>
+    <!-- Текст вторичный: средне-серый -->
+    <color name="ink_medium">#7F8C8D</color>
+    <!-- Текст светлый: светло-серый -->
+    <color name="ink_light">#BDBDBD</color>
+    <!-- Акцент primary: пастельный голубой -->
+    <color name="ocean_blue">#4A90E2</color>
+    <!-- Акцент темный: темно-голубой -->
+    <color name="ocean_dark">#357ABD</color>
+    <!-- Зеленый для прочитанных: мягкий мятный -->
+    <color name="mint_green">#A8E6CF</color>
+    <!-- Оливковый для чтения: приглушенный -->
+    <color name="muted_blue">#AED6F0</color>
+    <!-- Серый для планов: светло-серый -->
+    <color name="light_gray">#D5DBDB</color>
+    <!-- Разделители: очень светло-серый -->
+    <color name="dividers_light">#E8E8E8</color>
+    <!-- Красный для ошибок -->
+    <color name="error_red">#E74C3C</color>
+    <!-- Черный и белый -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <!-- Карточки по статусам -->
+    <color name="card_planned">#F0F8FF</color>
+    <color name="card_reading">#E3F2FD</color>
+    <color name="card_read">#E8F5E8</color>
+</resources>

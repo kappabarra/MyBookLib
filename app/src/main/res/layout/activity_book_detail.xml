@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paper_lightblue"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Название книги -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:boxStrokeColor="@color/dividers_light"
+            app:boxBackgroundMode="outline"
+            app:hintTextColor="@color/ink_medium"
+            android:hint="Название книги">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTitle"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:maxLength="50"
+                android:textColor="@color/ink_dark"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Автор -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:boxStrokeColor="@color/dividers_light"
+            app:boxBackgroundMode="outline"
+            app:hintTextColor="@color/ink_medium"
+            android:hint="Автор">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:maxLength="50"
+                android:textColor="@color/ink_dark"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Жанр (выпадающий список) -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutGenre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            app:boxStrokeColor="@color/dividers_light"
+            app:boxBackgroundMode="outline"
+            app:hintTextColor="@color/ink_medium"
+            app:endIconMode="dropdown_menu"
+            android:hint="Жанр">
+
+            <AutoCompleteTextView
+                android:id="@+id/editGenre"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:inputType="none"
+                android:focusable="false"
+                android:clickable="true"
+                android:textColor="@color/ink_dark"
+                android:textSize="16sp"
+                android:paddingStart="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Год -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:boxStrokeColor="@color/dividers_light"
+            app:boxBackgroundMode="outline"
+            app:hintTextColor="@color/ink_medium"
+            android:hint="Год">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editYear"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textColor="@color/ink_dark"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Статус -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Статус"
+            android:textColor="@color/ink_dark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioPlanned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="В планах"
+                android:textColor="@color/ink_dark"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radioReading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="Читаю"
+                android:textColor="@color/ink_dark"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radioRead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Прочитано"
+                android:textColor="@color/ink_dark"
+                android:textSize="14sp" />
+        </RadioGroup>
+
+        <!-- Оценка -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Оценка"
+            android:textColor="@color/ink_dark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:rating="0"
+            android:isIndicator="false"/>
+
+        <!-- Заметки -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:boxStrokeColor="@color/dividers_light"
+            app:boxBackgroundMode="outline"
+            app:hintTextColor="@color/ink_medium"
+            android:hint="Заметки">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editNotes"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:maxLength="200"
+                android:textColor="@color/ink_dark"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Кнопки -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonLoadFb2"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="8dp"
+            android:text="Загрузить книгу (FB2)"
+            app:backgroundTint="@color/ocean_blue" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonRead"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="8dp"
+            android:text="Читать книгу"
+            android:visibility="gone"
+            app:backgroundTint="@color/mint_green" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSave"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="8dp"
+            android:text="Сохранить"
+            app:backgroundTint="@color/ocean_blue" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonDelete"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:backgroundTint="@color/error_red"
+            android:text="Удалить"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

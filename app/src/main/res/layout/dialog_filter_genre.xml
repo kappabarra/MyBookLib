@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/paper_lightblue">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Фильтр по жанру"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/ink_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Выберите жанр для фильтрации"
+        android:textSize="14sp"
+        android:textColor="@color/ink_dark" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:boxStrokeColor="@color/dividers_light"
+        app:boxBackgroundMode="outline"
+        app:hintEnabled="false"
+        app:hintTextColor="@color/ink_medium"
+        android:padding="0dp"
+        app:endIconMode="none"
+        android:hint="Жанр">
+
+        <AutoCompleteTextView
+            android:id="@+id/editGenreFilter"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:focusable="false"
+            android:clickable="true"
+            android:textColor="@color/ink_dark"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:inputType="textNoSuggestions"
+            android:background="@drawable/bg_goal_edittext"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>
